@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+    display: grid;
+    grid-gap: 16px 16px;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 40px 60% 50% 30% 30%; 
+    
+    grid-template-areas: "hd hd hd"
+                         "sec sec sec"
+                         "img img content"
+                         "it1 it2 it3"
+                         "b1 b1 b2";
+
+    
+}
+
+
+header{
+    grid-area: hd;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+  .title{
+      width: 100vw;
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-area: sec;
+  }
+
+  #text-title{
+      color: white;
+      font-size: 100px;
+      
+  }
+
+ main, section {
+      padding: 16px;
+      text-align: center;
+  }
+
+  .main-image{
+      background: rgb(129, 129, 129);
+      grid-area: img;
+      
+  }
+
+  .main-content{
+      background: rgb(112, 255, 172);
+      grid-area: content;
+      
+  }
+
+  .more-items1{
+      background: rgb(116, 116, 116);
+      grid-area: it1;
+      
+  }
+
+  .more-items2{
+      background:rgb(148, 168, 255);
+      grid-area: it2;
+      
+  }
+  .more-items3{
+    background: rgb(216, 60, 255);
+    grid-area: it3;
+
+  }
+
+  .bottom1{
+      background: rgb(255, 175, 2);
+      grid-area: b1;
+      
+  }
+
+  .bottom2{
+      background: rgb(164, 255, 164);
+      grid-area: b2;
+      
+  }
